@@ -29,7 +29,7 @@ public class Main {
             button.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    doThis();
+                    standardTest();
                     frame.setVisible(false);
                 }
             });
@@ -47,7 +47,7 @@ public class Main {
         }
 
 
-        public static void doThis() {
+        public static void standardTest() {
             //creates the GUI
             JFrame frame = new JFrame("Jordan Standard Test");
 
@@ -136,7 +136,7 @@ public class Main {
                         " wrong. Congrats!", "Results", JOptionPane.PLAIN_MESSAGE);
             }
             else {
-                JOptionPane.showMessageDialog(new JFrame(), "Sorry, you failed with " + numWrong + ".",
+                JOptionPane.showMessageDialog(new JFrame(), "Sorry, you failed with " + numWrong + " wrong.",
                         "Results", JOptionPane.PLAIN_MESSAGE);
             }
         }
